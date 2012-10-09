@@ -2,10 +2,6 @@ package gopdf
 import (
   "bytes"
   "os/exec"
-  "net/http"
-  "fmt"
-  "flag"
-  "runtime"
 )
 func PDF(input string) bytes.Buffer {
     cmd := exec.Command("wkhtmltopdf", "-", "-")
